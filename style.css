@@ -1,0 +1,166 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400&family=Poppins:wght@400&display=swap');
+
+
+
+body, h2, p{
+    margin:0;
+    padding:0;
+} 
+body{
+    background-color: rgb(105, 0, 204);
+    padding:1em;
+    background-image: url("bg-desktop.svg");
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    font-family: "open sans";
+}
+header img { 
+    width: 15%;
+}
+main {
+    margin-top: 3em ;
+    display: flex;
+    /* justify-content: space-between; */
+}
+main img {
+    margin-left: 3em !important;
+}
+.mockups {
+  width: 35%;
+  flex-basis: 45%;
+}
+.content {
+     width: 33%;
+     margin: 3em auto;
+}
+.content h2 {
+    font-size: 40px;
+    color: white;
+    font-family: "Poppins";
+}
+.content p { 
+     padding: 2em 0em;
+     font-size: 15px;
+     color: white;
+     line-height: 30px;
+}
+.content button {
+    padding: 1em;
+    border-radius: 30px;
+    width: 38% !important;
+    color:  purple;
+    border-radius: none;
+}
+.content button:hover {
+    background-color: rgb(183, 43, 226);
+    color: white;
+}
+footer {
+    float: right !important;
+}
+footer .fab {
+    color: white;
+    font-size: 25px;
+    border-radius: 50%;
+    border: 1px solid white;
+    padding: 0.5em;
+    margin-right: 10px;
+} 
+footer .fab:hover {
+    border-color: white; 
+    color: rgb(136, 33, 136) ;
+}
+/* ipad Screen Sixes */
+
+@media only screen and (max-width: 992px){
+    header img { 
+        width: 20%;
+
+    }
+    main {
+        display: block;
+
+    }
+    main img {
+        width: 88% !important;
+    
+    }
+    .content {
+        width: 100%;
+
+    }
+    .content h2 {
+        font-size: 31px;
+
+    }
+    .content p {
+        font-size: ;
+    }
+
+}
+
+
+/* Mobile Screen sizes */
+
+@media  only screen and (max-width: 600px) { 
+    header img {
+        width: 35%;
+
+    }
+    main {
+        display: block;
+        margin-top: 2em;
+        padding-right: 2em !important;
+
+    }
+    main img {
+        width: 80% !important;
+
+    }
+    .mockups {
+        width: 100%;
+        flex-basis: 45%;
+      
+    }
+
+    .content { 
+        width: 100%;
+        text-align: center;
+        margin: 1em !important;
+        padding-right: 1em !important;
+       
+    }
+    .content h2 {
+        font-size: 20px;
+
+    }
+    .content p {
+            font-size: 12px;
+            line-height: 15px;
+
+    }
+    .content button{
+        width: 80% !important;
+        height: 20% !important;
+
+    }  
+    footer {
+        float: none !important;
+        text-align: center !important;
+        padding-top: 1em;
+      
+    }
+    footer .fab {
+        font-size: 14px;
+
+    }
+
+}
+
+/* 
+@media only screen and (max-width: 992px){
+
+    main {}
+} */
